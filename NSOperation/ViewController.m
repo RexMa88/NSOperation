@@ -34,6 +34,8 @@
         NSLog(@"The queue Two");
     }];
     
+    operationTwo.queuePriority = NSOperationQueuePriorityHigh;
+    
     [queue addOperations:@[operationZero, operationOne, operationTwo] waitUntilFinished:YES];
 //    [queue addOperation:operation];
     
